@@ -15,12 +15,18 @@ class="login-form"
     </label>
     <label for="" class="tt-control-label">
         Пароль
-        <input
-        formControlName="password"  
-        class="tt-input"
-        type="password" name="" 
-        placeholder="Введите пароль" 
-       >
+        <span class="pass-intput">
+            
+            <input
+            formControlName="password"  
+            class="tt-input"
+            [type]="isPasVis() ? 'text' : 'password'" 
+            placeholder="Введите пароль" 
+            >
+            <button (click)="isPasVis.set(!isPasVis())" class="pass-eye-btn">
+                <img src="/assets/images/pass.png" alt="">
+            </button>
+        </span>
     </label>
     <button class="btn">Войти</button>
 </form>

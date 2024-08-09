@@ -5,3 +5,16 @@
     align-items: center;
     margin: 0 5%;
 }
+.pass-intput {
+    position: relative;
+
+}
+.pass-eye-btn{
+    position: absolute;
+    background: none;
+    border: none;
+    color: red;
+    top: 40%;
+    right: -280px;
+    cursor: pointer;
+}
